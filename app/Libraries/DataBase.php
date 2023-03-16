@@ -2,11 +2,11 @@
 
 class Database {
 //atributos
-private $host = 'localhost';
-private $usuario = 'root';
-private $senha = '';
-private $db_name = 'framework';
-private $porta = '3306';
+private $host = DB['HOST'];
+private $usuario =  DB['USER'];
+private $senha =  DB['PASSWORD'];
+private $db_name =  DB['DB_NAME'];
+private $porta =  DB['PORT'];
 private $dbh;
 private $stmt;
 

@@ -131,12 +131,41 @@ class Posts extends Controller
 
     public function excluir($id){
 
-        if($this->post->excluirPost($id)){
-            Sessao::mensagem('post', 'Registro excluído com sucesso!');
-            Redirect::redirecionar('posts');
+        if(!$this->verificaUsuLogado($id)){
+
+            $id = filter_var($id, FILTER_VALIDATE_INT);
+
+            $metodo = filter_input(INPUT_SERVER, 'REQUEST_METHOD', FILTER_SANITIZE_STRING);
+    
+            if($id AND $metodo == 'POST'){
+
+                if($this->post->excluirPost($id)){
+                    Sessao::mensagem('post', 'Registro excluído com sucesso');
+                    Redirect::redirecionar('posts');
+                }
+            }
         }else{
-            echo 'erro ao excluir';
+            Sessao::mensagem('post', 'Registro não pode ser excluído!', 'alert alert-danger');
+            Redirect::redirecionar('posts');
         }
+
+        // if($this->post->excluirPost($id)){
+        //     Sessao::mensagem('post', 'Registro excluído com sucesso!');
+        //     Redirect::redirecionar('posts');
+        // }else{
+        //     echo 'erro ao excluir';
+        // }
         
+    }
+
+    private function verificaUsuLogado($id){
+
+        $post = $this->post->exibirPostID($id);
+
+            if($post->id_usuario != $_SESSION['usuario_id']){
+                return true;
+            }else{
+                return false;
+            }
     }
 }

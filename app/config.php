@@ -1,4 +1,11 @@
 <?php
+//variaveis de conexao com o banco de dados
+define('DB', ['HOST' => 'localhost',
+              'USER' => 'root',
+              'PASSWORD' => '',
+              'DB_NAME' => 'framework',
+              'PORT' => '3306']);
+
 //constante do diretorio raiz
 define('APP', dirname(__FILE__)); 
 
