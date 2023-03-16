@@ -98,6 +98,11 @@ class Posts extends Controller
 
             $post = $this->post->exibirPostID($id);
 
+            if($post->id_usuario != $_SESSION['usuario_id']){
+                Sessao::mensagem('post', 'Usuario nao pode editar este post!', 'alert alert-danger');
+                    Redirect::redirecionar('posts');
+            }
+
             $dados = [
                       'id' => $id,
                       'titulo' => $post->titulo,
@@ -106,7 +111,7 @@ class Posts extends Controller
                       'texto_erro' => ''
             ];
         }
-         var_dump($dados);
+         //var_dump($dados);
         $this->view('posts/editar', $dados);
     }
 
@@ -122,5 +127,16 @@ class Posts extends Controller
         ]; 
 
         $this->view('posts/selecionar', $dados);
+    }
+
+    public function excluir($id){
+
+        if($this->post->excluirPost($id)){
+            Sessao::mensagem('post', 'Registro excluído com sucesso!');
+            Redirect::redirecionar('posts');
+        }else{
+            echo 'erro ao excluir';
+        }
+        
     }
 }

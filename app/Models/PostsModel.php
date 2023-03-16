@@ -52,11 +52,24 @@ class PostsModel
 
     public function editar($dados){
 
-        $this->db->query("UPDATE posts SET titulo = :tiulo, texto = :texto WHERE id = :id");
+        $this->db->query("UPDATE posts SET titulo = :titulo, texto = :texto WHERE id = :id");
 
         $this->db->bind("id", $dados['id']);
         $this->db->bind("titulo", $dados['titulo']);
         $this->db->bind("texto", $dados['texto']);
+
+        if($this->db->executa()){
+            return true;
+        } else{
+            return false;
+        }
+    }
+
+    public function excluirPost($id){
+
+        $this->db->query("DELETE FROM posts WHERE id = :id");
+
+        $this->db->bind("id", $id);
 
         if($this->db->executa()){
             return true;

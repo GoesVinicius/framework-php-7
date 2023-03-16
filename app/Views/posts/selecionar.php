@@ -19,8 +19,20 @@
                     Escrito por: <b><?= $dados['usuario']->nome ?></b> em <i><?= Valida::validaData($dados['post']->dt_criacao) ?></i>
                 </small>
             </div>
+
+            
             <?php if($dados['post']->id_usuario == $_SESSION['usuario_id']){ ?>
-                <a href="<?= URL .'/posts/editar/'. $dados['post']->id ?>" class="btn btn-sm btn-warning">Editar</a>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                    <a href="<?= URL .'/posts/editar/'. $dados['post']->id ?>" class="btn btn-sm btn-outline-warning my-2">Editar</a>
+                    </li>
+                    
+                    <li class="list-inline-item">
+                        <form action="<?= URL .'/posts/excluir/'. $dados['post']->id ?>" method="POST">
+                            <input type="submit" class="btn btn-sm btn-outline-danger" value="Excluir">
+                        </form>
+                    </li>
+                </ul>
             <?php } ?>
         </div>
     </div>

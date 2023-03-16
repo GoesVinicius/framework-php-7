@@ -28,7 +28,8 @@ private $stmt;
         }
     }
 
-    // prepara uma query atraves de um metodo do PDO
+
+    //prepara uma query atraves de um metodo do PDO
     public function query($sql){
         $this->stmt = $this->dbh->prepare($sql);
     }

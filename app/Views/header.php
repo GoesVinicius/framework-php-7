@@ -19,8 +19,12 @@
                     </li>
                 </ul>
                 <?php if(isset($_SESSION['usuario_id'])){ ?>
-                    <p class="text-white">Olá, <?= $_SESSION['usuario_nome']; ?>, Seja bem-vindo(a)</p>
-                    <a class="btn btn-sm btn-danger" href="<?= URL ?> /usuario/logOut">sair</a>
+
+                    <div class="">
+                        <p class="text-white">Olá, <?= $_SESSION['usuario_nome']; ?>, Seja bem-vindo(a)</p>
+                        <a class="btn btn-sm btn-danger" href="<?= URL ?> /usuario/logOut">sair</a>
+                    </div>
+                    
                 <?php } else{ ?>
                 <span class="navbar-text">
                     <a class="btn btn-info" href="<?= URL ?>/usuario/cadastrar" data-tooltip="tooltip" title="Não tem uma conta? Cadastre-se">Cadastre-se</a>
