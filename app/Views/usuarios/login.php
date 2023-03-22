@@ -1,6 +1,6 @@
-<div class="col-xl-4 col-md-6 mx-auto p-5">
+<div class="col-xl-4 col-md-6 mx-auto p-5 my-5">
     <div class="card">
-        <div class="card-header">
+        <div class="card-header bg-dark text-white">
             Entrar
         </div>
         <div class="card-body">
@@ -26,12 +26,12 @@
 
                 </div>
 
-                <div class="row">
+                <div class="row my-3">
                     <div class="col">
-                        <input type="submit" value="Login" class="btn btn-info btn-block">
+                        <input type="submit" value="Login" class="btn btn-dark btn-block">
                     </div>
                     <div class="col">
-                        <a href="<?= URL ?>/usuario/cadastrar">Ainda não tem uma conta? Faça seu cadastro</a>
+                        <a href="<?= URL ?>/usuario/cadastrar"><small>Ainda não tem uma conta? Faça seu cadastro </small></a>
                     </div>
                 </div>
 

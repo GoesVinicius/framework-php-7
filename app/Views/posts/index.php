@@ -1,7 +1,7 @@
 <div class="container py-5">
     <div class="card">
     <?=Sessao::mensagem('post')?>
-        <div class="card-header bg-info text-white">
+        <div class="card-header bg-dark text-white">
             POSTAGENS
             <div class="float-end">
                 <a href="<?= URL ?> /posts/salvar" class="btn btn-light">Adicionar</a>
@@ -15,7 +15,7 @@
                     </div>
                     <div class="card-body">
                         <p class="card-text"><?= $post->texto ?></p>
-                        <a href="<?= URL.'/posts/selecionar/'.$post->postID?>" class="btn btn-sm btn-outline-info float-end">Ler mais...</a>
+                        <a href="<?= URL.'/posts/selecionar/'.$post->postID?>" class="btn btn-sm btn-outline-dark float-end">Ler mais...</a>
                     </div>
                     <div class="card-footer text-muted">
                         <small>Escrito por: <?= $post->nome ?> em <?= Valida::validaData($post->postDtCriacao) ?></small>
