@@ -119,6 +119,10 @@ class Posts extends Controller
 
         $post = $this->post->exibirPostID($id); 
 
+        if($post == null){
+            Redirect::redirecionar('paginas/error');
+        }
+
         $usuario = $this->usuario->exibirUsuarioID($post->id_usuario);
 
         $dados = [

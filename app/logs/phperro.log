@@ -1,0 +1,20 @@
+Erro: Undefined array key "PASSWORD1" no arquivo C:\xampp\htdocs\framework\app\Models\UsuarioModel.php na linha 9
+Erro: Undefined array key "PASSWORD1" no arquivo C:\xampp\htdocs\framework\app\Models\UsuarioModel.php na linha 9
+Erro: Undefined array key "PASSWORD1" no arquivo C:\xampp\htdocs\framework\app\Models\UsuarioModel.php na linha 9
+Erro: Undefined array key "PASSWORD1" no arquivo C:\xampp\htdocs\framework\app\Models\UsuarioModel.php na linha 9
+Erro: Undefined array key "PASSWORD1" no arquivo C:\xampp\htdocs\framework\app\Models\UsuarioModel.php na linha 9
+Erro: Undefined array key "PASSWORD1" no arquivo C:\xampp\htdocs\framework\app\Models\UsuarioModel.php na linha 9
+Erro: Attempt to read property "id_usuario" on bool no arquivo C:\xampp\htdocs\framework\app\Controllers\Posts.php na linha 122
+Erro: Attempt to read property "titulo" on bool no arquivo C:\xampp\htdocs\framework\app\Views\posts\selecionar.php na linha 6
+Erro: Attempt to read property "titulo" on bool no arquivo C:\xampp\htdocs\framework\app\Views\posts\selecionar.php na linha 12
+Erro: Attempt to read property "texto" on bool no arquivo C:\xampp\htdocs\framework\app\Views\posts\selecionar.php na linha 15
+Erro: Attempt to read property "nome" on bool no arquivo C:\xampp\htdocs\framework\app\Views\posts\selecionar.php na linha 19
+Erro: Attempt to read property "dt_criacao" on bool no arquivo C:\xampp\htdocs\framework\app\Views\posts\selecionar.php na linha 19
+Erro: Attempt to read property "id_usuario" on bool no arquivo C:\xampp\htdocs\framework\app\Views\posts\selecionar.php na linha 24
+Erro: Attempt to read property "id_usuario" on bool no arquivo C:\xampp\htdocs\framework\app\Controllers\Posts.php na linha 126
+Erro: Attempt to read property "titulo" on bool no arquivo C:\xampp\htdocs\framework\app\Views\posts\selecionar.php na linha 6
+Erro: Attempt to read property "titulo" on bool no arquivo C:\xampp\htdocs\framework\app\Views\posts\selecionar.php na linha 12
+Erro: Attempt to read property "texto" on bool no arquivo C:\xampp\htdocs\framework\app\Views\posts\selecionar.php na linha 15
+Erro: Attempt to read property "nome" on bool no arquivo C:\xampp\htdocs\framework\app\Views\posts\selecionar.php na linha 19
+Erro: Attempt to read property "dt_criacao" on bool no arquivo C:\xampp\htdocs\framework\app\Views\posts\selecionar.php na linha 19
+Erro: Attempt to read property "id_usuario" on bool no arquivo C:\xampp\htdocs\framework\app\Views\posts\selecionar.php na linha 24

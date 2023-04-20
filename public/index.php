@@ -1,6 +1,8 @@
 <?php
     //inicia a sessao
     session_start();
+    //tratamento de erros
+    include './../app/phpError.php';
     //inclui arquivos essenciais
     include './../app/config.php';
     include './../app/autoload.php';

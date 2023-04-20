@@ -23,7 +23,7 @@ private $stmt;
             $this->dbh = new PDO($dsn, $this->usuario, $this->senha, $opcoes);
         
         } catch(PDOException $e){
-            print "Problema ao se conectar ao banco de dados: " . $e->getMessage() . "<br>";
+           phpErro($e->getCode(), $e->getMessage(), $e->getFile(), $e->getLine());
             die();
         }
     }
